@@ -1,0 +1,7 @@
+@media (max-width: 375px) {
+  .container {
+    background-image: url('../src/images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover center;
+  }
+}
