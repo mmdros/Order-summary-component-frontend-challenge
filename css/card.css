@@ -9,8 +9,8 @@
 
 .card {
   margin: 0 auto;
-  max-width: 400px;
-  height: 600px;
+  max-width: 350px;
+  max-height: 600px;
   text-align: center;
   justify-content: center;
   background-color: var(--color-white);
@@ -33,29 +33,35 @@
 
 .card-header p {
   color: var(--color-text-light);
+  font-size: 0.9em;
   padding: 0 20px 20px 20px;
 }
 
 .plan-box {
   display: flex;
-  max-width: 400px;
+  min-width: 350px;
   justify-content: space-evenly;
   margin: 0 auto;
+  padding: 0 0 20px 0;
 }
 
 .plan-info {
   display: flex;
   justify-content: center;
   text-align: left;
-  padding-left: 20px;
   margin: 20px;
 }
 
 .plan-icon img {
-  width: 50px;
-  height: 50px;
-  margin-right: 20px
-  ;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px  ;
+}
+
+.plan-text h2{
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 0.9em;
 }
 
 .plan-text span {
@@ -68,16 +74,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  font-size: 0.9em;
+  font-weight: 700;
+
 }
 
-.change-link:hover a {
-  color: var(--color-secondary);
+a.change-link:hover {
+  color: var(--color-secundary) !important;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.card.actions {
+    display: flex;
+    height: 400px;
 }
 
 .btn-primary {
   background-color: var(--color-primary);
-  width: 350px;
+  width: 280px;
   height: 40px;
   color: var(--color-white);
   font-weight: 700;
@@ -92,9 +107,9 @@
 }
 
 .btn-secondary {
-  width: 350px;
-  height: 40px;
-  padding: 10px;
+  width: 280px;
+  height: 60px;
+  padding: 20px;
   margin: 0 auto;
   color: var(--color-text-light);
   font-weight: 700;
