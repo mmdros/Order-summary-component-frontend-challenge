@@ -12,39 +12,44 @@
   </head>
   <body>
     <main class="container">
-      <section class="card">
-        <div class="card-hero">
-          <img src="./src/images/illustration-hero.svg" alt="Hero Image" />
-        </div>
+      <select id="language-select">
+        <option value="pt">Português</option>
+        <option value="en">English</option>
+      </select>
+        <section class="card">
+          <div class="card-hero">
+            <img src="./src/images/illustration-hero.svg" alt="Hero Image" />
+          </div>
 
-        <div class="card-content">
-          <header class="card-header">
-            <h1>Order Summary</h1>
-            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-          </header>
+          <div class="card-content">
+            <header class="card-header">
+              <h1 data-i18n="title">Order Summary</h1>
+              <p data-i18n="description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            </header>
 
-          <div class="plan-box">
-            <div class="plan-info">
-              <div class="plan-icon">
-                <img src="./src/images/icon-music.svg" alt="Music Icon" />
+            <div class="plan-box">
+              <div class="plan-info">
+                <div class="plan-icon">
+                  <img src="./src/images/icon-music.svg" alt="Music Icon" />
+                </div>
+
+                <div class="plan-text">
+                  <h2 data-i18n="plan-title">Annual Plan</h2>
+                  <p><span data-i18n="plan-price">$59.99/year</span></p>
+                </div>
               </div>
 
-              <div class="plan-text">
-                <h2>Annual Plan</h2>
-                <p><span>$59.99/year</span></p>
-              </div>
+              <a href="#" class="change-link" data-i18n="chg-lnk">Change</a>
             </div>
 
-            <a href="#" class="change-link">Change</a>
-          </div>
+            <div class="card-actions">
+              <p class="btn-primary" data-i18n="button-primary">Proceed to Payment</p>
 
-          <div class="card-actions">
-            <p class="btn-primary">Proceed to Payment</p>
-
-            <p class="btn-secondary">Cancel Order</p>
+              <p class="btn-secondary" data-i18n="button-secondary">Cancel Order</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
     </main>
+      <script src="./js/i18n.js"></script>
   </body>
 </html>
