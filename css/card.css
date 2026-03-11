@@ -10,7 +10,7 @@
 .card {
   margin: 0 auto;
   max-width: 400px;
-  max-height: 800px;
+  height: 600px;
   text-align: center;
   justify-content: center;
   background-color: var(--color-white);
@@ -20,6 +20,59 @@
 .card .card-hero img {
   width: 100%;
   border-radius: 20px 20px 0 0;
+}
+
+.card .card-header {
+  font-weight: 700;
+}
+
+.card-header h1 {
+  color: var(--color-text);
+  padding: 20px;
+}
+
+.card-header p {
+  color: var(--color-text-light);
+  padding: 0 20px 20px 20px;
+}
+
+.plan-box {
+  display: flex;
+  max-width: 400px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.plan-info {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding-left: 20px;
+  margin: 20px;
+}
+
+.plan-icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px
+  ;
+}
+
+.plan-text span {
+  color: var(--color-text-light);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.change-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-link:hover a {
+  color: var(--color-secondary);
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -39,15 +92,16 @@
 }
 
 .btn-secondary {
-    width: 350px;
-    height: 40px;
-    padding: 10px;
-    margin: 0 auto;
-    color: var(--color-text-light);
-    font-weight: 700;
-    font-size: 0.75em;
+  width: 350px;
+  height: 40px;
+  padding: 10px;
+  margin: 0 auto;
+  color: var(--color-text-light);
+  font-weight: 700;
+  font-size: 0.75em;
 }
 
 .btn-secondary:hover {
-    color: var(--color-text);
-    cursor: pointer;}
+  color: var(--color-text);
+  cursor: pointer;
+}
